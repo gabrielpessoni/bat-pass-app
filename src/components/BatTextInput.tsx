@@ -1,7 +1,18 @@
 import { StyleSheet, TextInput } from "react-native";
 
-const BatTextInput = () => {
-  return <TextInput style={styles.inputer} placeholder="pass" multiline />;
+interface BatTextInputProps {
+  pass: string;
+}
+
+const BatTextInput = (props: BatTextInputProps) => {
+  return (
+    <TextInput
+      style={styles.inputer}
+      placeholder="pass"
+      multiline
+      value={props.pass}
+    />
+  );
 };
 
 export default BatTextInput;
