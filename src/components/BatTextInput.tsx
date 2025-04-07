@@ -11,6 +11,7 @@ const BatTextInput = (props: BatTextInputProps) => {
       placeholder="pass"
       multiline
       value={props.pass}
+      readOnly
     />
   );
 };
